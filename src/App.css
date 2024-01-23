@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease; /* Add transition for smooth color change */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Dark Theme */
+body.dark-theme {
+  background-color: #121212;
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: #333;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-section {
+  position: relative;
+  height: 400px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.hero-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.booking-form-section {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.booking-form-section label,
+.booking-form-section button {
+  color: #fff;
+}
+
+.booking-form-section textarea,
+.booking-form-section input {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.booking-form-section button {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.booking-form-section button:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: #ff5454;
+  margin-top: 10px;
+}
+
+.testimonials-section {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.footer-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
 }
